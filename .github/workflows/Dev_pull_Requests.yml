@@ -1,7 +1,7 @@
 name: Dev_Pull_Request
 on:
   pull_request:
-    tags:
+    branches:
       - 'main'
 jobs:
   check-bats-version:
