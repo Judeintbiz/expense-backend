@@ -4,9 +4,18 @@ on:
     branches:
       - 'XPNS-*'
 jobs:
-  check-bats-version:
+  CI_Steps:
     runs-on: self-hosted
     steps:
-      - run: env
+      - name: Checkout
+        uses: actions/checkout@v4
 
-#
+      - name: Unit Tests
+        run: echo Unit Tests
+
+      - name: Integration Tests
+        run: echo Integration Tests
+
+      - name: Code Quality
+        run: echo Code Quality
+
