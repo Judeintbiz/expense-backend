@@ -5,4 +5,4 @@ on:
       - 'XPNS-*'
 jobs:
   CI_Steps:
-    uses:
+    uses: Judeintbiz/githuc-actions/.github/workflows/Dev_CI.yml@main
